@@ -1,7 +1,7 @@
 //controller for searching
 
 
-angular.module('tollCalculator').controller('searchController', function($scope){
+angular.module('tollCalculator').controller('searchController', function($scope, $http){
   
   console.log($scope.origin)
   console.log($scope.destination)

@@ -9,8 +9,8 @@ angular.module('tollCalculator').config( function($urlRouterProvider, $stateProv
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'partials/search.html',
-      //controller: 'mainController'
+      templateUrl: '../views/partials/search.html',
+      controller: 'searchController'
     });
 
 
