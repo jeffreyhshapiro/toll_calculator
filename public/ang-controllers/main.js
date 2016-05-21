@@ -1,6 +1,8 @@
-var tollCalculator = angular.module("tollCalculator", ['searchController']);
 
-tollCalculator.config( function($stateProvider, ['ui.router']){
+//var tollCalculator = angular.module('tollCalculator');
+angular.module('tollCalculator', ['ui.router']);
+
+angular.module('tollCalculator').config( function($urlRouterProvider, $stateProvider){
   $urlRouterProvider.otherwise("/"); //provide for routes that don't exist
 
 
@@ -8,7 +10,7 @@ tollCalculator.config( function($stateProvider, ['ui.router']){
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'partials/home.html',
+      templateUrl: 'partials/search.html',
       //controller: 'mainController'
     });
 
