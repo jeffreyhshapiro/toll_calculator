@@ -1,3 +1,4 @@
+
 //var tollCalculator = angular.module('tollCalculator');
 angular.module('tollCalculator', ['ui.router']);
 
@@ -12,6 +13,7 @@ angular.module('tollCalculator').config( function($urlRouterProvider, $stateProv
       templateUrl: 'partials/search.html',
       //controller: 'mainController'
     });
+
 
 
 
