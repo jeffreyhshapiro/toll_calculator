@@ -21,7 +21,7 @@ app.get('/toll', function(req, res) {
   apiURL += '&currency=USD';
   apiURL += '&detail=1';
   apiURL += '&start_ts=2016-05-21T16:00:00';
-  apiURL += '&vspec=3;2;1;3;2;0;5;400;400;12000;40000;0;0;0;1;6;1;0';
+  apiURL += '&vspec=2;0;0;2;0;0;1;60;0;4000;4000;0;0;1;1;4;0;0';
   apiURL += '&waypoint0=geo!40.756445,-73.987912';// get this from Google Maps Api
   apiURL += '&waypoint1=geo!40.354974,-74.348259';// get from Google Maps Api
   apiURL += '&metricsystem=metric';
