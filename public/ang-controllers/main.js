@@ -8,7 +8,7 @@ tollCalculator.config( function($stateProvider, ['ui.router']){
   $stateProvider
     .state('home', {
       url: '/',
-      templateUrl: 'partials/home.html',
+      templateUrl: 'partials/search.html',
       //controller: 'mainController'
     });
 
