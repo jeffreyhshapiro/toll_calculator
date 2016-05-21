@@ -1,4 +1,4 @@
-var tollCalculator = angular.module("toll-calculator");
+var tollCalculator = angular.module("toll-calculator", ['searchController']);
 
 tollCalculator.config( function($stateProvider, ['ui.router']){
   $urlRouterProvider.otherwise("/"); //provide for routes that don't exist
@@ -16,4 +16,3 @@ tollCalculator.config( function($stateProvider, ['ui.router']){
 
     //$locationProvider.html5Mode(true);
 });
-  
