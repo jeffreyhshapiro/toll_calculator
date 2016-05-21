@@ -1,7 +1,11 @@
 //controller for searching
-
-var directionsQuery = "https://maps.googleapis.com/maps/api/directions/json?origin=Disneyland&destination=Universal+Studios+Hollywood4&key=YOUR_API_KEY";
-
-
-$scope.origin = "Disneyland";
-$scope.destination = 
+var searchController = angular.module('searchController')
+searchController.controller('searchController', function($scope){
+  console.log($scope.origin)
+  console.log($scope.destination)
+  var origin = $scope.origin;
+  var destination = $scope.destination;
+  $http.get('/search').then(function() {
+    var directionsQuery = "https://maps.googleapis.com/maps/api/directions/json?origin="+ origin + "&destination="+ destination + "&key=" + process.env.tollKey;
+  })
+})
