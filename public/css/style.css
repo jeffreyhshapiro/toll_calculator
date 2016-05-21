@@ -16,6 +16,14 @@ h2, h3, h4, h5 {
   font-family: 'Cabin Condensed', sans-serif;
 }
 
+.form {
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #00695c;
+  text-align: left;
+  color: #212121;
+}
+
 .container {
   padding-top: 60px;
 }
