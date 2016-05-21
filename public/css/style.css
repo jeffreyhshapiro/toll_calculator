@@ -3,6 +3,11 @@ body {
    background-image: url("images/old_moon_@2X.jpg");
 }
 
-.top {
-  background-image: url("images/roadbanner.jpg");
+.jumbotron {
+  text-align: center;
+}
+
+
+h1 {
+  font-family: 'Cabin Sketch', cursive;
 }
