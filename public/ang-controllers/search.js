@@ -5,15 +5,10 @@ angular.module('tollCalculator')
     $scope.searchQuerySubmit = function(){
       var origin = $scope.origin;
       var destination = $scope.destination;
-      console.log($scope.origin)
-      console.log($scope.destination)
-  }
-
-
-
-console.log("process.env.tollKey: "+ process.env.tollKey)
-
-  // $http.get('/search').then(function() {
-  //   var directionsQuery = "https://maps.googleapis.com/maps/api/directions/json?origin="+ origin + "&destination="+ destination + "&key=" + process.env.tollKey;
-  // })
+      console.log(origin)
+      console.log(destination)
+      $http.get('/search').then(function() {
+        var directionsQuery = "https://maps.googleapis.com/maps/api/directions/json?origin="+ origin + "&destination="+ destination + "&key=AIzaSyA-nftHnip6wJ1zX_SoBfmmhZmynfvk-u0";
+      })
+    }
 })
