@@ -1,8 +1,10 @@
 <!DOCTYPE html>
+<html lang="en">
 <html ng-app="tollCalculator">
 
 <head>
   <title> TOLL CALCULATOR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" crossorigin="anonymous"></script>
 
@@ -12,13 +14,49 @@
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"  crossorigin="anonymous">
 
+  <link href='https://fonts.googleapis.com/css?family=Cabin+Sketch' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed' rel='stylesheet' type='text/css'>
+
+  <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-
   <div class="jumbotron">
-    <h1>TOLL CALCULATOR</h1>
+    <h1>TOLL CALCULATOR </h1>
+    <img src="images/icon2.png">
+
+    <h4>Tolls on your Time</h4>
+
   </div>
+
+
+  {{2+2}}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-s-12 col-md-4 col-lg-4">
+        <div class="form">
+          <div class="form-group">
+            <label for="comment">Form:</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-8 col-lg-8">
+        <h3>Results Here</h3>
+      </div>
+    </div>
+  </div>
+
+<!-- <footer>
+ <div id="footer" class="pad-section">
+  <div class="container">
+    <div class="row">
+        
+    </div>
+  </div>
+</div>
+</footer> -->
 
 <div ui-view></div>
 
