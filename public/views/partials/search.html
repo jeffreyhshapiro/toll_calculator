@@ -1,11 +1,17 @@
 <div ng-controller='searchController'>
 
-<form>
-  Origin
+
+<div class="form">
+<form action='/search'>
+
+
+  <h4>Origin</h4>
   <input type="text" ng-model='origin'>
-  Desintation
+  <h4>Desintation</h4>
   <input type='text' ng-model='destination'>
-  <input type='submit' ng-click='searchQuerySubmit()'>
+  </br>
+  <input type='submit' class="btn btn-info" ng-click='searchQuerySubmit()'>
 </form>
+</div>
 
 </div>
