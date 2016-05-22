@@ -9,7 +9,7 @@ app.use(express.static('public'));
 
 
 app.get('/', function(req, res) {
-  var filePath = process.cwd() + '/views/index.html'
+  var filePath = process.cwd() + '/public/views/index.html'
   // console.log(filePath);
   res.sendFile(filePath);
 });
