@@ -1,0 +1,30 @@
+{
+  "name": "toll_calculator",
+  "version": "1.0.0",
+  "description": "Brainiac Hackathon Toll Calculator",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreyhshapiro/toll_calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jeffreyhshapiro/toll_calculator/issues"
+  },
+  "homepage": "https://github.com/jeffreyhshapiro/toll_calculator#readme",
+  "dependencies": {
+    "bcrypt": "^0.8.6",
+    "body-parser": "^1.15.1",
+    "express": "^4.13.4",
+    "morgan": "^1.7.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "request": "^2.72.0",
+    "request-promise": "^3.0.0"
+  }
+}
