@@ -1,7 +1,7 @@
 //controller for searching
 
 angular.module('tollCalculator')
-  .controller('searchController', function($scope, $http, $rootScope){
+  .controller('searchController', function($scope, $http){
     // $scope.totalCost = [];
     $scope.searchQuerySubmit = function(){
       var origin = $scope.origin;
@@ -9,9 +9,12 @@ angular.module('tollCalculator')
       console.log(origin)
       console.log(destination)
       $http.get('https://maps.googleapis.com/maps/api/geocode/json?address='  + origin + '&key=AIzaSyA-nftHnip6wJ1zX_SoBfmmhZmynfvk-u0').then(function(originData) {
+
         var originGeoCode = originData.data.results[0].geometry.location;
         $scope.originGeoCode = originGeoCode;
-        return $http.get('https://maps.googleapis.com/maps/api/geocode/json?address=' + destination + '&key=AIzaSyA-nftHnip6wJ1zX_SoBfmmhZmynfvk-u0')
+
+        return $http.get('https://maps.googleapis.com/maps/api/geocode/json?address=' + destination + '&key=AIzaSyA-nftHnip6wJ1zX_SoBfmmhZmynfvk-u0');
+
       }).then(function(destinationData) {
         var destGeoCode = destinationData.data.results[0].geometry.location;
         $scope.destGeoCode = destGeoCode;
@@ -46,6 +49,7 @@ angular.module('tollCalculator')
         }).catch(function(err) {
           if (err) throw err;
         });
+
       });
     }
 })
